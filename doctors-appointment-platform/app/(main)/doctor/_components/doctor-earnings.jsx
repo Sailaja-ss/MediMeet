@@ -81,10 +81,10 @@ export function DoctorEarnings({ earnings, payouts = [] }) {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-black">
+                <p className="text-sm text-white">
                   Available Credits
                 </p>
-                <p className="text-3xl font-bold text-black">
+                <p className="text-3xl font-bold text-white">
                   {availableCredits}
                 </p>
                 <p className="text-xs text-slate-400">
@@ -102,8 +102,8 @@ export function DoctorEarnings({ earnings, payouts = [] }) {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-black">This Month</p>
-                <p className="text-3xl font-bold text-black">
+                <p className="text-sm text-white">This Month</p>
+                <p className="text-3xl font-bold text-white">
                   ${thisMonthEarnings.toFixed(2)}
                 </p>
               </div>
@@ -118,10 +118,10 @@ export function DoctorEarnings({ earnings, payouts = [] }) {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-black">
+                <p className="text-sm text-white">
                   Total Appointments
                 </p>
-                <p className="text-3xl font-bold text-black">
+                <p className="text-3xl font-bold text-white">
                   {completedAppointments}
                 </p>
                 <p className="text-xs text-slate-400">completed</p>
@@ -138,7 +138,7 @@ export function DoctorEarnings({ earnings, payouts = [] }) {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">Avg/Month</p>
-                <p className="text-3xl font-bold text-black">
+                <p className="text-3xl font-bold text-white">
                   ${averageEarningsPerMonth.toFixed(2)}
                 </p>
               </div>
@@ -153,16 +153,16 @@ export function DoctorEarnings({ earnings, payouts = [] }) {
       {/* Payout Section */}
       <Card className="border-emerald-900/20">
         <CardHeader>
-          <CardTitle className="text-xl font-bold text-black flex items-center">
+          <CardTitle className="text-xl font-bold text-white flex items-center">
             <CreditCard className="h-5 w-5 mr-2 text-emerald-400" />
             Payout Management
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           {/* Current Payout Status */}
-          <div className="bg-muted/20 p-4 rounded-lg border border-emerald-900/20">
+          <div className="bg-muted/20 p-4 rounded-lg border border-emerald-800/20">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-lg font-medium text-black">
+              <h3 className="text-lg font-medium text-white">
                 Available for Payout
               </h3>
               {pendingPayout ? (

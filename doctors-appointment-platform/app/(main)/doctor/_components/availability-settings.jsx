@@ -92,7 +92,7 @@ export function AvailabilitySettings({ slots }) {
   return (
     <Card className="border-emerald-900/20">
       <CardHeader>
-        <CardTitle className="text-xl font-bold text-black flex items-center">
+        <CardTitle className="text-xl font-bold text-white flex items-center">
           <Clock className="h-5 w-5 mr-2 text-emerald-400" />
           Availability Settings
         </CardTitle>
@@ -105,7 +105,7 @@ export function AvailabilitySettings({ slots }) {
         {!showForm ? (
           <>
             <div className="mb-6">
-              <h3 className="text-lg font-medium text-black mb-3">
+              <h3 className="text-lg font-medium text-white mb-3">
                 Current Availability
               </h3>
 
@@ -125,7 +125,7 @@ export function AvailabilitySettings({ slots }) {
                         <Clock className="h-4 w-4 text-emerald-400" />
                       </div>
                       <div>
-                        <p className="text-black font-medium">
+                        <p className="text-white font-medium">
                           {formatTimeString(slot.startTime)} -{" "}
                           {formatTimeString(slot.endTime)}
                         </p>
@@ -219,7 +219,7 @@ export function AvailabilitySettings({ slots }) {
         )}
 
         <div className="mt-6 p-4 bg-muted/10 border border-emerald-900/10 rounded-md">
-          <h4 className="font-medium text-black mb-2 flex items-center">
+          <h4 className="font-medium text-white mb-2 flex items-center">
             <AlertCircle className="h-4 w-4 mr-2 text-emerald-400" />
             How Availability Works
           </h4>
